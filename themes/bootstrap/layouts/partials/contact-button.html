@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-12 col-md-4">
+        <div class="address-block contact-meta-block">
+            <i class="fas fa-map"></i>
+            <h4>{{ .Site.Data.contact.addressTitle }}</h4>
+            <p>{{ .Site.Data.contact.address | safeHTML }}</p>
+        </div>
+    </div>
+    <div class="col-12 col-md-4">
+        <div class="phone-block contact-meta-block">
+            <i class="fas fa-phone"></i>
+            <h4>{{ .Site.Data.contact.phoneTitle }}</h4>
+            <p>{{ .Site.Data.contact.phone | safeHTML }}</p>
+        </div>
+    </div>
+    <div class="col-12 col-md-4">
+        <div class="social-icons-block contact-meta-block">
+            <i class="fas fa-envelope-open"></i>
+            <h4>{{ .Site.Data.contact.emailTitle }}</h4>
+            <p>{{ .Site.Data.contact.email | safeHTML }}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+{{ define "main" }}
+<section class="contact-us section bg-gray" id="contact">
+    <div class="container">
+        {{ with .Site.Data.contact }}
+        {{- partial "title.html" . -}}
+        {{ end }}
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <div class="map">
+                    <div id="map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abe1021dc277d74410884f55afb8aead925254f3447a2764fbd67aa3334883d25&amp;source=constructor" width="740" height="400" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form col-12 col-md-4 ">
+                <form id="contact-form" method="post" action="https://formspree.io/{{ .Site.Params.email }}" role="form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше Имя" class="form-control" name="name" id="name">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" placeholder="Ваш Email" class="form-control" name="email" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Тема" class="form-control" name="subject" id="subject">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea rows="6" placeholder="Текст сообщения" class="form-control" name="message" id="message"></textarea>
+                    </div>
+
+                    <div id="cf-submit">
+                        <input type="submit" id="contact-submit" class="btn btn-transparent" value="Отправить">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        {{- partial "contact-button.html" . -}}
+
+    </div>
+</section>
+{{ end }}

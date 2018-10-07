@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ .Site.LanguageCode }}">
+{{- partial "head.html" . -}}
+<body>
+    <div id="all">
+        {{- partial "splash.html" . -}}
+        <header>
+            {{- partial "nav.html" . -}}
+        </header>
+        {{ block "main" . }}
+        {{ end }}
+        {{- partial "footer.html" . -}}
+    </div>
+    {{- partial "js.html" . -}}
+</body>
+</html>

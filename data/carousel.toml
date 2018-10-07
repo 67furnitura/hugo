@@ -1,0 +1,18 @@
+# Задание картикок для карусели на главной страницы
+# number - порядок следования (чем меньше, тем левее)
+# image - картинка
+[[item]]
+   number = 1
+   image = "images/carousel/carousel1.jpg"
+[[item]]
+   number = 2
+   image = "images/carousel/carousel2.png"
+[[item]]
+   number = 3
+   image = "images/carousel/carousel3.jpg"
+[[item]]
+   number = 4
+   image = "images/carousel/carousel4.jpg"
+[[item]]
+   number = 5
+   image = "images/carousel/carousel5.jpg"

@@ -1,0 +1,28 @@
+# Миссия и преимущества
+# иконки задаются через стили https://fontawesome.com/icons?d=gallery
+#
+enable  = true
+topTitle = "Как мы работаем"
+title   = "Наши преимущества"
+subTitle = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+
+[[item]]
+   number = 1
+   icon = "fas fa-atom"
+   title = "Шоурум"
+   description = """Магазин с выставочным павильоном, где можно вживую посмотреть наши товары."""
+[[item]]
+   number = 2
+   icon = "fas fa-award"
+   title = "Time Management"
+   description = """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis."""
+[[item]]
+   number = 3
+   icon = "fas fa-balance-scale"
+   title = "Mail Support"
+   description = """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis."""
+[[item]]
+   number = 4
+   icon = "fas fa-lightbulb"
+   title = "Secure System"
+   description = """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis."""

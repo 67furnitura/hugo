@@ -1,0 +1,30 @@
+{{ if .Site.Data.partner.enable }}
+<section class="testimonial section" id="testimonial">
+    <div class="container">
+        {{ with .Site.Data.partner }}
+        {{- partial "title.html" . -}}
+        {{ end }}
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="partner-carousel owl-carousel owl-theme">
+                    {{ range sort .Site.Data.partner.item "number" }}
+                    <div class="item text-center">
+                        <i class="tf-ion-quote"></i>
+                        <div class="client-details">
+                            <p>{{ .description }}</p>
+                        </div>
+                        <div class="client-thumb">
+                            <img src="{{ .image | absURL }}" class="img-fluid" alt="client-image">
+                        </div>
+                        <div class="client-meta">
+                            <h4>{{ .name }}</h4>
+                            <span>{{ .subName }}</span>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

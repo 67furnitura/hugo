@@ -1,0 +1,10 @@
+{{ if .Site.Data.contact.enable }}
+<section class="contact-us section bg-gray" id="contact">
+    <div class="container">
+        {{ with .Site.Data.contact }}
+        {{- partial "title.html" . -}}
+        {{ end }}
+        {{- partial "contact-button.html" . -}}
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,9 @@
+# Последние акции и новости
+#
+enable  = true
+topTitle = "акуальные"
+title   = "Акции и Новости"
+subTitle = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+
+author = "автор"
+readMore = "Читать далее"

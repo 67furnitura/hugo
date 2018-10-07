@@ -1,0 +1,17 @@
+enable = true
+topTitle = "Нас легко найти и ещё проще связаться"
+title   = "Наши контакты"
+subTitle = """Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"""
+
+addressTitle = "Наш адрес"
+address = """214029, Смоленск, Краснинское шоссе, 37"""
+
+phoneTitle = "Телефоны"
+phone = """+7-(964)-619-48-99</br>
++7-(905)-696-00-22
+"""
+
+emailTitle = "Электронная почта"
+email = """zakazmf67@mail.ru<br/>
+furnitura67@mail.ru
+"""

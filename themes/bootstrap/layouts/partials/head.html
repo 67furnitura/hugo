@@ -1,0 +1,37 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{{ .Title }}</title>
+
+    {{ if .Keywords }}
+    <meta name="keywords" content="{{ delimit .Keywords ", " }}">
+    {{ else if .Site.Params.DefaultKeywords }}
+    <meta name="keywords" content="{{ delimit .Site.Params.DefaultKeywords ", " }}">
+    {{ end }}
+
+    {{ if .Description }}
+    <meta name="description" content="{{ .Description }}">
+    {{ else if .Site.Params.DefaultDescription }}
+    <meta name="description" content="{{ .Site.Params.DefaultDescription }}">
+    {{ end }}
+
+    {{ .Hugo.Generator }}
+
+    <!-- Bootstrap and Font Awesome css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Owl Carousel 2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+
+    <!-- Favicon and apple touch icons-->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ "images/favicon.png" | absURL }}" />
+    <link rel="apple-touch-icon" href="{{ "images/favicon.png" | absURL }}" />
+    <link rel="alternate" type="application/rss+xml" href="{{ "/index.xml" | absURL }}" title="{{ .Site.Title }}">
+
+    <link rel="stylesheet" href="{{ "css/style.main.css" | absURL }}">
+</head>
