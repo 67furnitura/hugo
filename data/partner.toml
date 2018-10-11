@@ -4,31 +4,31 @@ title   = "Наши Партнёры"
 subTitle = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
 
 [[item]]
-   number = 1
+   weight = 1
    image = "images/partner/boyard.png"
    name = "Boyard"
    subName = "лидер мебельной фурнитуры"
    description = """Магазин с выставочным павильоном, где можно вживую посмотреть наши товары."""
 [[item]]
-   number = 2
+   weight = 2
    image = "images/partner/elikor.png"
    name = "Elikor"
    subName = "лидер мебельной фурнитуры"
    description = """Магазин с выставочным павильоном, где можно вживую посмотреть наши товары."""
 [[item]]
-   number = 3
+   weight = 3
    image = "images/partner/marrbaxx.png"
    name = "Marrbaxx"
    subName = "лидер мебельной фурнитуры"
    description = """Магазин с выставочным павильоном, где можно вживую посмотреть наши товары."""
 [[item]]
-   number = 4
+   weight = 4
    image = "images/partner/mdm.png"
    name = "МДМ"
    subName = "лидер мебельной фурнитуры"
    description = """Магазин с выставочным павильоном, где можно вживую посмотреть наши товары."""
 [[item]]
-   number = 5
+   weight = 5
    image = "images/partner/ukinox.jpg"
    name = "Ukinox"
    subName = "лидер мебельной фурнитуры"

@@ -1,5 +1,5 @@
 {{ if .Site.Data.benefit.enable }}
-<section class="service-2 section bg-gray">
+<section class="service-2 section">
     <div class="container">
         {{ with .Site.Data.benefit }}
         {{- partial "title.html" . -}}
@@ -8,18 +8,10 @@
             {{ range $index, $element:= .Site.Data.benefit.item }}
             <div class="col-md-4 col-sm-6 p-0">
                 <div class="service-item text-center">
-                    {{ with .number }}
-                    <span class="count">{{ . }}.</span>
-                    {{ end }}
-                    {{ with .icon }}
-                    <i class="{{ . }}"></i>
-                    {{ end }}
-                    {{ with .title }}
-                    <h4>{{ . }}</h4>
-                    {{ end }}
-                    {{ with .description }}
-                    <p>{{ . }}</p>
-                    {{ end }}
+                    <span class="count">{{ add $index 1 }}.</span>
+                    <i class="{{ .icon }}"></i>
+                    <h4>{{ .title }}</h4>
+                    <p>{{ .description }}</p>
                 </div>
             </div>
             {{ if eq (mod $index 2) 1 }}

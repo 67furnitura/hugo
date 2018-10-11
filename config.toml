@@ -32,10 +32,14 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
       url     = "/"
       weight  = 1
     [[menu.main]]
+      name    = "Наши Партнёры"
+      url     = "/partner/"
+      weight  = 2
+    [[menu.main]]
       name    = "Акции и новости"
       url     = "/promo/"
-      weight  = 2
+      weight  = 3
     [[menu.main]]
       name    = "Контакты"
       url     = "/contact/"
-      weight  = 3
+      weight  = 4

@@ -4,7 +4,9 @@ title   = "Наши контакты"
 subTitle = """Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"""
 
 addressTitle = "Наш адрес"
-address = """214029, Смоленск, Краснинское шоссе, 37"""
+address = """214029, Смоленск, Краснинское шоссе, 37</br>
+ТЦ \"Автомолл\"
+"""
 
 phoneTitle = "Телефоны"
 phone = """+7-(964)-619-48-99</br>

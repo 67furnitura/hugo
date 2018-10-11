@@ -1,7 +1,9 @@
 <div class="row">
     <div class="col-12 col-md-4">
         <div class="address-block contact-meta-block">
-            <i class="fas fa-map"></i>
+            <a href="{{ "/contact" | absURL }}">
+                <i class="fas fa-map"></i>
+            </a>
             <h4>{{ .Site.Data.contact.addressTitle }}</h4>
             <p>{{ .Site.Data.contact.address | safeHTML }}</p>
         </div>

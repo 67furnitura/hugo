@@ -1,7 +1,7 @@
 (function ($) { "use strict";
 
     $(window).on("load",function(){
-        $('#preloader').fadeOut('slow',function(){$(this).remove();});
+        $('#splash').fadeOut('slow',function(){$(this).remove();});
     });
 
     $('.homepage-carousel').owlCarousel({
@@ -15,15 +15,13 @@
         autoHeight:true
     });
 
-    $('.partner-carousel').owlCarousel({
-        items: 3,
-        center: true,
-        dots: true,
+    $('#partner-carousel').owlCarousel({
+        items: 5,
         loop:true,
         autoplay: true,
         autoplayTimeout: 1000,
         autoplayHoverPause: true,
-        autoHeight:true
+        autoHeight: false
     });
 
     $('#contact-submit').click(function (e) {

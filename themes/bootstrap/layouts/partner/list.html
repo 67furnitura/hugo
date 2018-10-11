@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section class="partner section" id="partner">
+    <div class="container">
+        {{ with .Site.Data.partner }}
+        {{- partial "title.html" . -}}
+        {{ end }}
+        <div class="row justify-content-center">
+            {{ range sort .Site.Data.partner.item "weight" }}
+            <div class="col-12 col-md-3 col-sm-6">
+                <div class="team-member text-center">
+                    <div class="member-photo">
+                        <img class="img-fluid" src="{{ .image | absURL }}" alt="{{ .name }}">
+                    </div>
+                    <div class="member-content">
+                        <h3>{{ .name }}</h3>
+                        <span>{{ .subName }}</span>
+                        <p>{{ .description }}</p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+
+        {{- partial "contact-button.html" . -}}
+    </div>
+</section>
+{{ end }}
