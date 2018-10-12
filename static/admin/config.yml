@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  repo: 67furnitura/hugo # Path to your Github repository
   branch: master # Branch to update (optional; defaults to master)
 
 media_folder: "static/images"
