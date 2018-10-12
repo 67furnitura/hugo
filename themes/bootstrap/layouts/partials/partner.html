@@ -9,7 +9,9 @@
             <div class="col-md-12">
                 <div id="partner-carousel" class="partner-carousel owl-carousel owl-theme">
                     {{ range sort .Site.Data.partner.item "weight" }}
-                    <img src="{{ .image | absURL }}" alt="client-logo">
+                    <a href="{{ .url }}" target="_blank" title="{{ .url }}">
+                        <img src="{{ .image | absURL }}" alt="client-logo">
+                    </a>
                     {{ end }}
                 </div>
             </div>

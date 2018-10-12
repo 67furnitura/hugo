@@ -5,30 +5,35 @@ subTitle = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reic
 
 [[item]]
    weight = 1
+   url = "https://www.boyard.biz/"
    image = "images/partner/boyard.png"
    name = "Boyard"
    subName = "лидер мебельной фурнитуры"
    description = """Магазин с выставочным павильоном, где можно вживую посмотреть наши товары."""
 [[item]]
    weight = 2
+   url = "http://elikor.com/"
    image = "images/partner/elikor.png"
    name = "Elikor"
    subName = "лидер мебельной фурнитуры"
    description = """Магазин с выставочным павильоном, где можно вживую посмотреть наши товары."""
 [[item]]
    weight = 3
+   url = "http://marbax.com/"
    image = "images/partner/marrbaxx.png"
    name = "Marrbaxx"
    subName = "лидер мебельной фурнитуры"
    description = """Магазин с выставочным павильоном, где можно вживую посмотреть наши товары."""
 [[item]]
    weight = 4
+   url = "https://www.mdm-complect.ru/"
    image = "images/partner/mdm.png"
    name = "МДМ"
    subName = "лидер мебельной фурнитуры"
    description = """Магазин с выставочным павильоном, где можно вживую посмотреть наши товары."""
 [[item]]
    weight = 5
+   url = "http://www.ukinox.tekar.ru/"
    image = "images/partner/ukinox.jpg"
    name = "Ukinox"
    subName = "лидер мебельной фурнитуры"
