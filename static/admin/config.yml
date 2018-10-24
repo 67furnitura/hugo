@@ -5,20 +5,22 @@ media_folder: "static/images"
 public_folder: "/images"
 
 collections:
-  - name: "contact" # Used in routes, e.g., /admin/collections/blog
-    label: "Contact" # Used in the UI
-    folder: "data/contact" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Address", name: "address", widget: "string"}
-  - name: "promo" # Used in routes, e.g., /admin/collections/blog
-    label: "Promo" # Used in the UI
-    folder: "content/promo" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "image", widget: "image"}
+  - name: "settings"
+    label: "Настройки"
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - name: benefit
+        label: Benefit
+        file: site/data/benefit.toml
+        description: Наши преимущества
+        fields:
+          - name: benefit
+            label: Benefit
+            widget: list
+            fields:
+              - {label: Функционал используется, name: enabled , widget: boolean}
+              - {label: Верхний заголовок раздела, name: topTitle, widget: string}
+              - {label: Основной заголовок раздела, name: title, widget: string}
+              - {label: Нижний заголовок раздела, name: subTitle, widget: text}
